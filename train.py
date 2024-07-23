@@ -6,7 +6,7 @@ from torch import nn
 import pandas as pd
 import geopandas as gpd
 import random
-from model import Model
+from model_all import Model
 import copy
 import matplotlib.pyplot as plt
 import numpy as np
@@ -532,8 +532,8 @@ if __name__ == "__main__":
 				optimiser.step()
 				torch.cuda.empty_cache()
 		if (epoch+1)%args.eval_frequency == 0:
-			# save_model()
-			# cprint('Model saved', 'yellow', attrs=['underline'])
+			save_model()
+			cprint('Model saved', 'yellow', attrs=['underline'])
 			tqdm.write(colored("\nDoing a partial evaluation on train set", "blue", attrs = ["bold", "underline"]))
 			tqdm.write(colored("\nStandard",  "cyan", attrs = ["bold", "reverse", "blink"]))
 			train_results =  evaluate_no_hierarchy(data = train_data, 

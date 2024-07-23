@@ -1,2 +1,8 @@
 __pycache__
 .DS_Store
+/preprocessed_data
+/__pyfilecache__
+pkls*/
+*.err
+*.out
+*.slurm

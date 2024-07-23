@@ -4,7 +4,7 @@ from termcolor import colored, cprint
 #########################################################################
 # please set this path according to the extracted folder
 # PREFIX_PATH = None
-PREFIX_PATH = "/home/qpp/data/preprocessed_data/"
+PREFIX_PATH = "./preprocessed_data/"
 #########################################################################
 
 if PREFIX_PATH is None:
